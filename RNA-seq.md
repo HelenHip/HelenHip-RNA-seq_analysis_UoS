@@ -22,6 +22,7 @@
   This pipeline closely follows the approach and workflow developed for the above workshop by Katy Maher, Helen 
   Hipperson, Ewan Harney, Steve Paterson, Bert Overduin, Matthew Gemmell and Xuan Liu. It also relies substantially 
   on scripts developed by Katy Maher. Use and referencing of this repository implicitly acknowledges these contributions.
+  </details>
 <br>
 <details><summary><font size="6"><b>2) About</b></font></summary>
   <br>
