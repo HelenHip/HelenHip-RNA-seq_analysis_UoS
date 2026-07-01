@@ -4,6 +4,9 @@
 <img src="Images/NEOF.png"
     alt="NEOF Icon"
     style="left; margin-right: 10px;" />
+<img src="Images/rna.png"
+    alt="RNA Icon"
+    style="left; margin-right: 10px;" />
 <br>
 <br>
 # RNA-seq pipeline workshop for Stanage
@@ -21,11 +24,11 @@
  
   Compiled by: Helen Hipperson, University of Sheffield<br>
  
-  This pipeline is set up to perform the analysis of RNAseq data in the context of examining differential 
+  This tutorial is set up to introduce the analysis of RNAseq data in the context of examining differential 
   expression, using standard tools, as introduced in the NEOF RNAseq, Differential Gene Expression and 
   Pathway Analysis workshop. Details of the workshop can be found [here](https://neof.org.uk/training/). 
 
-  This pipeline closely follows the approach and workflow developed for the above workshop by Katy Maher, Helen 
+  This closely follows the approach and workflow developed for the above workshop by Katy Maher, Helen 
   Hipperson, Ewan Harney, Steve Paterson, Bert Overduin, Matthew Gemmell and Xuan Liu. It also relies substantially 
   on scripts developed by Katy Maher. Use and referencing of this repository implicitly acknowledges these contributions.
 </details>
@@ -40,10 +43,35 @@
   
   
   
-  The pipeline relies on you having short-read Illumina transcriptomic data for your samples, and access to a 
-  published or publically-available reference genome or transcriptome with (preferably) a high level of annotation.
+RNA-Seq (AKA whole transcriptomic shotgun sequencing) aims to determine the presence and quantity of RNA in a biological sample at a given moment in time. This allows you to determine the level of expression of these genes and therefore compare these expressions across different sample groups, i.e. Differential Gene Expression (DGE). 
 
-  This protocol has been written for use with the University of Sheffield's
+Sessions will start with a brief presentation followed by self-paced computer practicals guided by an online interactive book. The book will contain theory and practice code. Multiple choice questions will guide the interpretation of results.
+
+At the end of the course learners will be able to:
+
+- Quality control Illumina RNA-seq data.
+- Map RNA-seq data to a prepared reference transcriptome.
+- Visualise the mapping with IGV.
+- Count the number of reads per gene and exon with htseq.
+- Carry out differential gene expression analysis (DGE) with DESeq2.
+- Visualise DGE results via MA plots, volcano plots, heatmaps, and PCA plots.
+- Carry out Gene Ontology enrichment analysis.
+
+<p align="center">
+  <img src="Images/workflow.png" alt="workflow" width="200" />
+</p>
+
+Analyses of differential gene expression (DGE) tend to follow a similar pattern to the above image. There are variations on this pattern.  For instance, if no genes have been annotated in the reference genome these can be annotated using the RNA-seq reads as a guide.  If no reference genome has been sequenced, it may be possible to assemble RNA-seq reads directly, but this is very computationally intensive. We will not be assembling de-novo transcriptomes in this workshop, instead we will map our reads to an assembled genome.
+
+
+<p align="center">
+  <img src="Images/Drosophila.png" alt="Drosophila" width="200" />
+</p>
+  
+We will carry out a differential gene expression analysis of a subset of [_Drosophila pseudoobscura_](http://en.wikipedia.org/wiki/Drosophila_pseudoobscura) samples from a sexual selection experiment, following the above workflow.
+
+
+  This tutorial has been written for use with the University of Sheffield's
   [Stanage](https://docs.hpc.shef.ac.uk/en/latest/stanage/index.html#gsc.tab=0) high-performance computing (HPC) 
   system, but should be applicable to any GNU/Linux-based HPC system, with appropriate environments, software 
   installations and modification. Your mileage may vary.
@@ -76,6 +104,11 @@
 ### 3) Getting started on the HPC
 
 </summary>
+
+<p align="center">
+  <img src="Images/cluster.png" alt="computer" width="200" />
+</p>
+
 
 <details>
 <summary>
@@ -326,6 +359,11 @@ You're now ready to start the analyses!
 
 </summary>
 
+<p align="center">
+  <img src="Images/mangify_glass.png" alt="mangify_glass" width="200" />
+</p>
+
+
 This tutorial will give hands on experience with quality control of transcriptomic Illumina data. We will first look at the quality of the data.
 
 
@@ -369,6 +407,10 @@ Fastq files contain a header line, the nucleotide sequence, and its correspondin
 
 </summary>
 
+<p align="center">
+  <img src="Images/magnify_glass_27AUG2020.png" alt="mangify_glass" width="200" />
+</p>
+
 We’ll run the raw sequence data through FastQC to summarise the data quality.
 
 First make a directory for the output.
@@ -404,6 +446,11 @@ sbatch scripts/raw_fastqc.sh
 ```
 
 You can use ```squeue --me``` to list your jobs that are currently running to check that this job had started, and when it has finished running it will no longer be listed.
+
+<p align="center">
+  <img src="Images/question_bubble.png" alt="question_bubble" width="200" />
+</p>
+
 
 Download (using MobaXterm or FileZilla) and have a look at the output html reports to answer the following questions.
 
@@ -471,6 +518,10 @@ Generally even if data does look very nice we would carry out quality control to
 
 </summary>
 
+<p align="center">
+  <img src="Images/quality_trimming_and_filtering.png" alt="quality_trimming_and_filtering" width="200" />
+</p>
+
 Quality control generally comes in two forms:
 
 1. __Trimming__: This is directly cutting off bits of sequence. This is typical in the form of trimming off low quality bases from the end of reads and trimming off adapters at the start of reads.
@@ -528,6 +579,11 @@ Correct Answer: <strong>~75%</strong>
 
 __Post QC check__
 <br>
+
+<p align="center">
+  <img src="Images/magnify_glass_good.png" alt="mangify_glass" width="200" />
+</p>
+
 To see how successful the quality control has been we need to run fastqc on the trimmomatic output.
 
 First create a new directory for the fastqc output.
@@ -543,6 +599,11 @@ sbatch scripts/clean_fastqc.sh
 ```
 
 When the job has finished running download the html output files as before.
+
+
+<p align="center">
+  <img src="Images/question_bubble_blue.png" alt="question_bubble_blue" width="200" />
+</p>
 
 To see how well the reads have improved let’s answer the below questions and compare to them to the answers of the raw read fastqc questions.
 
