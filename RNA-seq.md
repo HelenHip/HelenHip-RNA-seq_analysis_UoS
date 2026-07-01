@@ -6,9 +6,11 @@
     style="left; margin-right: 10px;" />
 <br>
 <br>
-## RNA-seq pipeline workshop for Stanage
+# RNA-seq pipeline workshop for Stanage
 <br>
 <font size="4">
+
+## Introduction
 
 <details>
 <summary>
@@ -32,7 +34,7 @@
 <details>
 <summary>
 
-### 2) About
+### 2) Introduction
 
 </summary>
   
