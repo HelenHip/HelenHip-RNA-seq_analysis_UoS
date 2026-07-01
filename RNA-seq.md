@@ -78,9 +78,13 @@
 </summary>
   <br>
 
+<details>
+<summary>
+
 #### 3.1) Access the HPC
 
-  <br>
+ </summary>
+ <br>
 	
   To access the Stanage HPC you must be connected securely to the university network - this can 
   be achieved remotely by using the virtual private network (VPN) service.
@@ -92,10 +96,14 @@
   PowerShell) or a software package such as [MobaXterm](https://mobaxterm.mobatek.net/).
 
   <br>
+  
+  <details>
+  <summary>
 
 #### 3.2) Access a worker node on Stanage
 
-  <br>
+ </summary>
+ <br>
   
   Once you have successfully logged into Stanage, you need to access a worker node:
 
@@ -115,7 +123,12 @@
 
   
   <br>
+   <details>
+  <summary>
+  
 #### 3.3) Load the Genomics Software Repository
+
+</summary>
   <br>
   
   The Genomics Software Repository contains several pre-loaded pieces of software
@@ -151,7 +164,13 @@ $HOME/.bash_profile
 
   
   <br>
-  #### 3.4) Set up your conda profile
+   <details>
+  <summary>
+  
+#### 3.4) Set up your conda profile
+ 
+ 
+ </summary>
   <br>
   
   If you have never run conda before on Stanage, you might have to initialise your conda. To do this type:
@@ -164,7 +183,13 @@ $HOME/.bash_profile
   <br>
   
   <br>
-  #### 3.5) Running scripts on the HPC cluster
+  
+   <details>
+  <summary>
+  
+#### 3.5) Running scripts on the HPC cluster
+
+ </summary>
   <br>
   
   To add our job to the job scheduler, we would submit the shell scripts using 'sbatch'
@@ -193,7 +218,12 @@ $HOME/.bash_profile
 
 
   <br>
-  #### 3.6) Passing command line arguments to a script
+   <details>
+  <summary>
+  
+#### 3.6) Passing command line arguments to a script
+
+   </summary>
   <br>
 
   As well as running the standardised scripts there are some parameters which will be unique to your project or data. 
