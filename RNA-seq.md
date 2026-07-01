@@ -340,7 +340,7 @@ Before we can carry on with the workshop we need to change into the directory co
 
 
 <p align="center">
-  <img src="Images/Dros_2.png" alt="Drosophila sample" />
+  <img src="Images/Dros_2.png" alt="Drosophila sample" width="200" />
 </p>
      
 ```{bash eval=FALSE}
