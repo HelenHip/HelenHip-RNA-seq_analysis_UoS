@@ -547,25 +547,59 @@ When the job has finished running download the html output files as before.
 To see how well the reads have improved let’s answer the below questions and compare to them to the answers of the raw read fastqc questions.
 
 1. How many total reads are there in the R1 file? 
-   - [ ] 44
-   - [ ] 50-101
-   - [x] **409,267**
+   A) 44
+   B) 50-101
+   C) 409,267
+
+<details>
+<summary><strong>Click to reveal answer</strong></summary>
+<br>
+Correct Answer: <strong>C) 409,267</strong>
+</details>
 
 2. What is the length of the reads? 
-   - [ ] 44
-   - [x] **50-101**
-   - [ ] 539,580
+   A) 44
+   B) 50-101
+   C) 539,580
+
+<details>
+<summary><strong>Click to reveal answer</strong></summary>
+<br>
+Correct Answer: <strong>B) 50-101</strong>
+</details>
 
 3. What is the GC content (%) of the R2 reads? 
-   - [x] **44**
-   - [ ] 50-101
-   - [ ] 539,580
+   A) 44
+   B) 50-101
+   C) 539,580
+
+<details>
+<summary><strong>Click to reveal answer</strong></summary>
+<br>
+Correct Answer: <strong>A) 44</strong>
+</details>
 
 4. In the read 2 (R2) file, at what base position range does the quality of the reads go below 28 (I.e. the position where a part of the boxplot, including outliers, goes into the orange)? 
-   - [ ] 18-19
-   - [ ] 84-85
-   - [x] **They don't**
-   
+   A) 18-19
+   B) 84-85
+   C) They don't
+
+<details>
+<summary><strong>Click to reveal answer</strong></summary>
+<br>
+Correct Answer: <strong>C) They don't</strong>
+</details>
+
+__Summary__
+<br>
+
+Some things to note:
+
+- The amount of reads has significantly decreased due to quality control. This is expected, however this will need to be taken into account. If you do not have enough reads for the downstream analysis you will need to be less stringent on the trimming or filtering. 
+- Often in your own datasets the R2 quality will still be slightly worse than R1 quality towards the end of the reads after trimming. Again this is normal. You could be more stringent but as previously mentioned you may be removing too many reads.
+
+We have successfully carried out quality control of our reads. With our good quality data we can go onto alignment.
+
 
  
 </details>
