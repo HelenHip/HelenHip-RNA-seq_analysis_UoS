@@ -614,7 +614,6 @@ We have successfully carried out quality control of our reads. With our good qua
 [HISAT2](http://daehwankimlab.github.io/hisat2/manual/) is a fast and memory efficient alignment program for mapping next-generation sequencing reads (whole-genome, transcriptome, and exome sequencing data) against a reference genome. It is also a splice-aware aligner. Splice-aware aligners map reads over exon/intro junctions and are appropriate for aligning reads to a genome reference. Splice-unaware aligners are not aware of exon/intron junctions and are therefore only appropriate for mapping RNA-sequencing data to a transcriptome.
 
 
-</details>
 
 <details>
 <summary>
