@@ -16,10 +16,9 @@
 ### 1) Credits
 
 </summary>
-  <br>
-  <br>
+ 
   Compiled by: Helen Hipperson, University of Sheffield<br>
-  <br>
+ 
   This pipeline is set up to perform the analysis of RNAseq data in the context of examining differential 
   expression, using standard tools, as introduced in the NEOF RNAseq, Differential Gene Expression and 
   Pathway Analysis workshop. Details of the workshop can be found [here](https://neof.org.uk/training/). 
@@ -29,7 +28,6 @@
   on scripts developed by Katy Maher. Use and referencing of this repository implicitly acknowledges these contributions.
 </details>
 
-<br>
 
 <details>
 <summary>
