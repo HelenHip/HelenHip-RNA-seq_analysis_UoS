@@ -11,7 +11,9 @@
 <font size="4">
 <details>
 <summary>
+
 ### 1) Credits
+
 </summary>
   <br>
   <br>
@@ -26,7 +28,9 @@
   on scripts developed by Katy Maher. Use and referencing of this repository implicitly acknowledges these contributions.
 </details>
 <summary>
+
 ### 2) About
+
 </summary>
   <br>
   <br>
@@ -59,10 +63,14 @@
  Contact: Helen Hipperson //  h.hipperson@sheffield.ac.uk
 </details>
 <summary>
+
 ### 3) Getting started on the HPC
+
 </summary>
   <br>
-  #### 3.1) Access the HPC
+
+#### 3.1) Access the HPC
+
   <br>
 	
   To access the Stanage HPC you must be connected securely to the university network - this can 
@@ -75,7 +83,9 @@
   PowerShell) or a software package such as [MobaXterm](https://mobaxterm.mobatek.net/).
 
   <br>
-  #### 3.2) Access a worker node on Stanage
+
+#### 3.2) Access a worker node on Stanage
+
   <br>
   
   Once you have successfully logged into Stanage, you need to access a worker node:
@@ -96,7 +106,7 @@
 
   
   <br>
-  #### 3.3) Load the Genomics Software Repository
+#### 3.3) Load the Genomics Software Repository
   <br>
   
   The Genomics Software Repository contains several pre-loaded pieces of software
