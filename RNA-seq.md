@@ -525,6 +525,48 @@ sbatch scripts/trimmomatic.sh
 <br>
 Correct Answer: <strong>~75%</strong>
 </details>
+
+__Post QC check__
+<br>
+To see how successful the quality control has been we need to run fastqc on the trimmomatic output.
+
+First create a new directory for the fastqc output.
+
+```{bash eval=FALSE}
+mkdir trimmed_fastqc_output
+```
+
+Now run fastqc on the two paired read files.
+
+```{bash eval=FALSE}
+sbatch scripts/clean_fastqc.sh
+```
+
+When the job has finished running download the html output files as before.
+
+To see how well the reads have improved let’s answer the below questions and compare to them to the answers of the raw read fastqc questions.
+
+1. How many total reads are there in the R1 file? 
+   - [ ] 44
+   - [ ] 50-101
+   - [x] **409,267**
+
+2. What is the length of the reads? 
+   - [ ] 44
+   - [x] **50-101**
+   - [ ] 539,580
+
+3. What is the GC content (%) of the R2 reads? 
+   - [x] **44**
+   - [ ] 50-101
+   - [ ] 539,580
+
+4. In the read 2 (R2) file, at what base position range does the quality of the reads go below 28 (I.e. the position where a part of the boxplot, including outliers, goes into the orange)? 
+   - [ ] 18-19
+   - [ ] 84-85
+   - [x] **They don't**
+   
+
  
 </details>
 </details>
