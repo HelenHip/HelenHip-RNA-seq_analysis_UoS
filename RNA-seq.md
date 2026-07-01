@@ -78,7 +78,6 @@
 </summary>
   
 
-<details>
 <summary>
 
 #### 3.1) Access the HPC
