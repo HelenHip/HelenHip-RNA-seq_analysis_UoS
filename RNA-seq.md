@@ -384,17 +384,18 @@ We'll submit this as a job using ```sbatch```. First let's have a look at the jo
 less scripts/raw_fastqc.sh
 ```
 
-The lines at the top of the file contain the information on the amount of cores, memory and time we are requesting to use.
+The lines at the top of the file (starting with #SBATCH) contain the information on the amount of cores, memory and time we are requesting to use.
+There are lines of code to source our bash profile for accessing the Genomics Software Repository and loading the conda environment.
 The fastqc command itself is underneath these lines.
 
 <p align="left">
-  <img src="Images/fastqc_script.png" alt="Drosophila sample" width="300" />
+  <img src="Images/fastqc_script.png" alt="Fastqc script" width="300" />
 </p>
 
 
 __Note__: 
 
-- This command can be run over one line excluding the `\`
+- This fastqc command can be run over one line excluding the `\`
 - Alternatively, you can type `\` during a command and then press the enter key. The next line on the command line will start with `>`. This can be used to type one command over multiple lines and can be easier to read.
 
 Submit the script to run:
@@ -402,6 +403,7 @@ Submit the script to run:
 sbatch scripts/raw_fastqc.sh
 ```
 
+You can use ```squeue --me``` to list your jobs that are currently running to check that this job had started, and when it has finished running it will no longer be listed.
 
 Download (using MobaXterm or FileZilla) and have a look at the output html reports to answer the following questions.
 
@@ -468,6 +470,49 @@ Generally even if data does look very nice we would carry out quality control to
 #### 4.3) Quality control
 
 </summary>
+
+Quality control generally comes in two forms:
+
+1. __Trimming__: This is directly cutting off bits of sequence. This is typical in the form of trimming off low quality bases from the end of reads and trimming off adapters at the start of reads.
+2. __Filtering__: This occurs when entire reads are removed. A typical occurrence of this is when a read is too small as we do not want reads below a certain length.
+
+To carry this out we are going to use [Trimmomatic](http://www.usadellab.org/cms/index.php?page=trimmomatic).
+
+First we'll make a directory for the trimmed dataset.
+
+```{bash eval=FALSE}
+mkdir trimmed
+```
+
+To run Trimmomatic with the reads we will submit a job using the trimmomatic.sh script. Have a look at the job submission script.
+
+```{bash eval=FALSE}
+less scripts/trimmomatic.sh
+```
+
+<p align="left">
+  <img src="Images/trim_script.png" alt="Trimmomatic script" width="300" />
+</p>
+
+The parameter meanings are:
+
+- `PE`: Input data consists of paired-end reads.
+- `-phred33`: Type of quality Phred encoding. In this case it is phred33 as our fastq files use the sanger encoding like most Illumina data.
+- Next the raw input forward (1) and then reverse (2) read files for quality control are specified.
+- On the next line the output files for read 1 are specified, first for paired reads and second for unpaired reads. This comes about when one read from a pair is filtered out but the other one is not. We can normally ignore the unpaired file after the trimming. However, trimmomatic must have this value to run.
+- Next the output files for read 2 are specified, first paired then unpaired.
+- `ILLUMINACLIP`: These settings are used to find and remove Illumina adapters. First a fasta file of known adapter sequences is given, followed by the number of mismatches (2) allowed between the adapter and read sequence and then thresholds (30) for how accurate the alignment is between the adapter and read sequence.
+- `LEADING`: The minimum quality value required to keep a base at the start of the read.
+- `TRAILING`: The minimum quality value required to keep a base at the end of the read.
+- `SLIDINGWINDOW`: This specifies to scan the read quality over a 4bp window, cutting when the average quality drops below 30.
+- `MINLEN`: This specifies the minimum length of a read to keep, any shorter than 50bp are discarded.
+
+Submit the script to run:
+```{bash eval=FALSE}
+sbatch scripts/trimmomatic.sh
+```
+
+The 
 
 </details>
 </details>
