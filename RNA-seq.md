@@ -387,7 +387,9 @@ less scripts/raw_fastqc.sh
 The lines at the top of the file contain the information on the amount of cores, memory and time we are requesting to use.
 The fastqc command itself is underneath these lines.
 
-
+<p align="center">
+  <img src="Images/fastqc_script.png" alt="Drosophila sample" width="200" />
+</p>
 
 ```{bash eval=FALSE}
 fastqc -o raw_fastqc_output \
@@ -452,6 +454,7 @@ Correct Answer: <strong>84-85</strong>
 </details>
 
 __Summary__
+<br>
 In this case the reads seem to be good quality but we do see the quality decline towards the ends of the reads. This is common for Illumina datasets and will require trimming and filtering. 
 
 Other common quality issues seen in most datasets:
