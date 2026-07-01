@@ -94,7 +94,7 @@
   Once connected to the VPN you also need to connect to the HPC using a secure shell (SSH)
   connection. This can be achieved using the command line on your system (the Mac Terminal or Windows 
   PowerShell) or a software package such as [MobaXterm](https://mobaxterm.mobatek.net/).
-
+</details>
   <br>
   
   <details>
@@ -120,7 +120,7 @@
   [<user>@node001 [stanage] ~]$
   ```
   ...where \<user\> is your University of Sheffield (UoS) IT username.
-
+</details>
   
   <br>
    <details>
@@ -161,7 +161,7 @@ $HOME/.bash_profile
   ```
   
   Upon re-loading, you should see the above message relating to the Genomics Software Repository.
-
+</details>
   
   <br>
    <details>
@@ -180,6 +180,7 @@ $HOME/.bash_profile
   ```
   
   You will then be asked to reopen your current shell. Log out and then back into Stanage and then continue. 
+</details>
   <br>
   
   <br>
@@ -215,7 +216,7 @@ $HOME/.bash_profile
   You should also keep in mind that the resources (the number of cores, memory and time) requested in the scripts 
   may not be suitable for your own data set and analysis (or another HPC, if you are not using Stanage), and may 
   need to be changed. Again, the NEOF Bioinformatics Team can help in setting these in the scripts.
-
+</details>
 
   <br>
    <details>
@@ -237,3 +238,4 @@ $HOME/.bash_profile
   ```
   a_demo_script.sh -g my_orgamism.fa
   ```
+  </details>
