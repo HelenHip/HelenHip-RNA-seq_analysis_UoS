@@ -419,9 +419,9 @@ Correct Answer: <strong>C) 539,580</strong>
 </details>
 
 2. What is the length of the reads? 
-   - [ ] 44
-   - [ ] 101
-   - [ ] 539,580
+   - A) 44
+   - B) 101
+   - C) 539,580
 
 <details>
 <summary><strong>Click to reveal answer</strong></summary>
@@ -430,9 +430,9 @@ Correct Answer: <strong>101</strong>
 </details>
 
 3. What is the GC content (%) of the R2 reads? 
-   - [ ] 44
-   - [ ] 101
-   - [ ] 539,580
+   - A) 44
+   - B) 101
+   - C) 539,580
 
 <details>
 <summary><strong>Click to reveal answer</strong></summary>
@@ -441,9 +441,9 @@ Correct Answer: <strong>44</strong>
 </details>
 
 4. In the read 2 (R2) file, towards the end of the read, at what base position range does the quality of the reads go below 28 (I.e. the position where a part of the boxplot, including outliers, goes into the orange)? 
-   - [ ] 18-19
-   - [ ] 84-85
-   - [ ] 96-97
+   - A) 18-19
+   - B) 84-85
+   - C) 96-97
 
 <details>
 <summary><strong>Click to reveal answer</strong></summary>
