@@ -76,7 +76,6 @@
 ### 3) Getting started on the HPC
 
 </summary>
-</details>
 
 <details>
 <summary>
@@ -238,6 +237,7 @@ $HOME/.bash_profile
   ```
   a_demo_script.sh -g my_orgamism.fa
   ```
+  </details>
   </details>
   
 ## Generating gene counts
