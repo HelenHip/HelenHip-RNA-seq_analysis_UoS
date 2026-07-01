@@ -239,3 +239,77 @@ $HOME/.bash_profile
   a_demo_script.sh -g my_orgamism.fa
   ```
   </details>
+  
+## Generating gene counts
+
+<details>
+<summary>
+
+### 4) Quality Control
+
+</summary>
+
+</details>
+
+<details>
+<summary>
+
+### 5) Aligning Illumina transcriptome data to a reference genome
+
+</summary>
+
+</details>
+
+<details>
+<summary>
+
+### 6) Counting Reads using HTSeq-Count
+
+</summary>
+
+</details>
+
+
+## Differential Gene Expression
+
+<details>
+<summary>
+
+### 7) Introduction
+
+</summary>
+
+</details>
+
+<details>
+<summary>
+
+### 8) Filter the data
+
+</summary>
+
+</details>
+
+<details>
+<summary>
+
+### 9) DGE analysis
+
+</summary>
+
+</details>
+
+### 10) Visualising the results
+
+</summary>
+
+</details>
+
+<details>
+<summary>
+
+### 11) Export the results
+
+</summary>
+
+</details>
