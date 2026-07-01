@@ -387,14 +387,10 @@ less scripts/raw_fastqc.sh
 The lines at the top of the file contain the information on the amount of cores, memory and time we are requesting to use.
 The fastqc command itself is underneath these lines.
 
-<p align="center">
-  <img src="Images/fastqc_script.png" alt="Drosophila sample" width="200" />
+<p align="left">
+  <img src="Images/fastqc_script.png" alt="Drosophila sample" width="300" />
 </p>
 
-```{bash eval=FALSE}
-fastqc -o raw_fastqc_output \
-17_slice_R1.fq.gz 17_slice_R2.fq.gz
-```
 
 __Note__: 
 
