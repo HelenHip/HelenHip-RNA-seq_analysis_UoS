@@ -312,7 +312,7 @@ cd /mnt/parscratch/users/$USER
 mkdir rnaseq
 ```
 
-Then copy the directory with the example data into your 'home' directory.
+Then copy the directory with the example data into your new 'rnaseq' working directory.
 
 ```{bash eval=FALSE}
 cp -r /mnt/parscratch/users/bo1hxh/public/rnaseq/Practical_one ./rnaseq
@@ -653,108 +653,3 @@ We have successfully carried out quality control of our reads. With our good qua
 
 <details>
 <summary>
-
-### 5) Aligning Illumina transcriptome data to a reference genome
-
-</summary>
-[HISAT2](http://daehwankimlab.github.io/hisat2/manual/) is a fast and memory efficient alignment program for mapping next-generation sequencing reads (whole-genome, transcriptome, and exome sequencing data) against a reference genome. It is also a splice-aware aligner. Splice-aware aligners map reads over exon/intro junctions and are appropriate for aligning reads to a genome reference. Splice-unaware aligners are not aware of exon/intron junctions and are therefore only appropriate for mapping RNA-sequencing data to a transcriptome.
-
-
-
-<details>
-<summary>
-
-#### 5.1) Reference sequence preparation
-
-</summary>
-
-Text here
-
-</details>
-
-<details>
-<summary>
-
-#### 5.2) Read mapping
-
-</summary>
-
-
-</details>
-
-<details>
-<summary>
-
-#### 5.3) Assess mapping quality
-
-</summary>
-
-
-</details>
-
-<details>
-<summary>
-
-#### 5.4) Visualising the mapping
-
-</summary>
-
-
-</details>
-
-</details>
-</details>
-
-### 6) Counting Reads using HTSeq-Count
-
-</summary>
-
-</details>
-
-
-## Differential Gene Expression
-
-<details>
-<summary>
-
-### 7) Introduction
-
-</summary>
-
-</details>
-
-<details>
-<summary>
-
-### 8) Filter the data
-
-</summary>
-
-</details>
-
-<details>
-<summary>
-
-### 9) DGE analysis
-
-</summary>
-
-</details>
-
-<details>
-<summary>
-
-### 10) Visualising the results
-
-</summary>
-
-</details>
-
-<details>
-<summary>
-
-### 11) Export the results
-
-</summary>
-
-</details>
