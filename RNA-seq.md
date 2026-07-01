@@ -311,7 +311,6 @@ You're now ready to start the analyses!
   
   </details>
   
- </details>
 
   </details>
 
