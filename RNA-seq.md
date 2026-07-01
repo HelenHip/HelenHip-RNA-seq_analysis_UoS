@@ -67,6 +67,10 @@
   <br><br>
  Contact: Helen Hipperson //  h.hipperson@sheffield.ac.uk
 </details>
+
+<br>
+
+<details>
 <summary>
 
 ### 3) Getting started on the HPC
