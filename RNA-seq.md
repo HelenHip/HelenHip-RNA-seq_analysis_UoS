@@ -35,8 +35,8 @@
 ### 2) About
 
 </summary>
-  <br>
-  <br>
+  
+  
   
   The pipeline relies on you having short-read Illumina transcriptomic data for your samples, and access to a 
   published or publically-available reference genome or transcriptome with (preferably) a high level of annotation.
@@ -62,11 +62,11 @@
   File-paths within normal text are within single quote marks, like this:
 
   '/home/user/a_file_path'
-  <br><br>
+  
  Contact: Helen Hipperson //  h.hipperson@sheffield.ac.uk
 </details>
 
-<br>
+
 
 <details>
 <summary>
@@ -74,7 +74,7 @@
 ### 3) Getting started on the HPC
 
 </summary>
-  <br>
+  
 
 <details>
 <summary>
@@ -82,7 +82,7 @@
 #### 3.1) Access the HPC
 
  </summary>
- <br>
+ 
 	
   To access the Stanage HPC you must be connected securely to the university network - this can 
   be achieved remotely by using the virtual private network (VPN) service.
@@ -93,7 +93,7 @@
   connection. This can be achieved using the command line on your system (the Mac Terminal or Windows 
   PowerShell) or a software package such as [MobaXterm](https://mobaxterm.mobatek.net/).
 </details>
-  <br>
+  
   
   <details>
   <summary>
@@ -101,7 +101,7 @@
 #### 3.2) Access a worker node on Stanage
 
  </summary>
- <br>
+ 
   
   Once you have successfully logged into Stanage, you need to access a worker node:
 
@@ -120,14 +120,14 @@
   ...where \<user\> is your University of Sheffield (UoS) IT username.
 </details>
   
-  <br>
+  
    <details>
   <summary>
   
 #### 3.3) Load the Genomics Software Repository
 
 </summary>
-  <br>
+  
   
   The Genomics Software Repository contains several pre-loaded pieces of software
   and environments useful for a range of genomic analyses, including this one.
@@ -161,7 +161,7 @@ $HOME/.bash_profile
   Upon re-loading, you should see the above message relating to the Genomics Software Repository.
 </details>
   
-  <br>
+  
    <details>
   <summary>
   
@@ -169,7 +169,7 @@ $HOME/.bash_profile
  
  
  </summary>
-  <br>
+  
   
   If you have never run conda before on Stanage, you might have to initialise your conda. To do this type:
   
@@ -179,9 +179,9 @@ $HOME/.bash_profile
   
   You will then be asked to reopen your current shell. Log out and then back into Stanage and then continue. 
 </details>
-  <br>
   
-  <br>
+  
+  
   
    <details>
   <summary>
@@ -189,7 +189,7 @@ $HOME/.bash_profile
 #### 3.5) Running scripts on the HPC cluster
 
  </summary>
-  <br>
+  
   
   To add our job to the job scheduler, we would submit the shell scripts using 'sbatch'
   (don't do this; it's simply an example).
@@ -216,19 +216,19 @@ $HOME/.bash_profile
   need to be changed. Again, the NEOF Bioinformatics Team can help in setting these in the scripts.
 </details>
 
-  <br>
+  
    <details>
   <summary>
   
 #### 3.6) Passing command line arguments to a script
 
    </summary>
-  <br>
+  
 
   As well as running the standardised scripts there are some parameters which will be unique to your project or data. 
   For example, these might be your file extensions, the name of your reference genome or the filtering parameters you
-  want to implement for quality control (QC).<br>
-  <br>
+  want to implement for quality control (QC).
+  
 
   To run a script with these extra parameters (termed 'arguments') we supply them on the command line with a 'flag'.
   For example, you might supply your genome file name to a script using the '-g' flag as
