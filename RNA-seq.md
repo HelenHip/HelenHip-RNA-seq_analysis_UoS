@@ -638,6 +638,7 @@ Text here
 
 <details>
 <summary>
+
 #### 5.3) Assess mapping quality
 
 </summary>
@@ -647,6 +648,7 @@ Text here
 
 <details>
 <summary>
+
 #### 5.4) Visualising the mapping
 
 </summary>
