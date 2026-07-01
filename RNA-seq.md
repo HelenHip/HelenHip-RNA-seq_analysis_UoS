@@ -58,7 +58,7 @@ At the end of the course learners will be able to:
 - Carry out Gene Ontology enrichment analysis.
 
 <p align="center">
-  <img src="Images/workflow.png" alt="workflow" width="200" />
+  <img src="Images/workflow.png" alt="workflow" width="800" />
 </p>
 
 Analyses of differential gene expression (DGE) tend to follow a similar pattern to the above image. There are variations on this pattern.  For instance, if no genes have been annotated in the reference genome these can be annotated using the RNA-seq reads as a guide.  If no reference genome has been sequenced, it may be possible to assemble RNA-seq reads directly, but this is very computationally intensive. We will not be assembling de-novo transcriptomes in this workshop, instead we will map our reads to an assembled genome.
@@ -254,28 +254,8 @@ $HOME/.bash_profile
    <details>
   <summary>
   
-#### 3.6) Passing command line arguments to a script
 
-   </summary>
-  
-
-  As well as running the standardised scripts there are some parameters which will be unique to your project or data. 
-  For example, these might be your file extensions, the name of your reference genome or the filtering parameters you
-  want to implement for quality control (QC).
-  
-
-  To run a script with these extra parameters (termed 'arguments') we supply them on the command line with a 'flag'.
-  For example, you might supply your genome file name to a script using the '-g' flag as
-
-  ```
-  a_demo_script.sh -g my_organism.fa
-  ```
-  </details>
-  
-  <details>
-  <summary>
-  
-#### 3.7) Accessing the example data
+#### 3.6) Accessing the example data
 
    </summary>
    
@@ -283,7 +263,7 @@ $HOME/.bash_profile
    <details>
   <summary>
   
-##### 3.7.1) Set up
+##### 3.6.1) Set up
 
    </summary>
    
@@ -313,7 +293,7 @@ $HOME/.bash_profile
    <details>
   <summary>
   
-##### 3.7.2) Getting the data
+##### 3.6.2) Getting the data
 
    </summary>
    
@@ -330,7 +310,7 @@ cd /mnt/parscratch/users/$USER
 Then copy the directory with the example data into your 'home' directory.
 
 ```{bash eval=FALSE}
-cp -r /mnt/parscratch/users/bo1hxh/public/rnaseq .
+cp -r /mnt/parscratch/users/bo1hxh/public/rnaseq/Practical_one .
 ```
 
 
