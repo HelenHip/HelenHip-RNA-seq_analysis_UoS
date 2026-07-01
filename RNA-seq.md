@@ -377,6 +377,7 @@ Fastq files contain a header line, the nucleotide sequence, and its correspondin
 </summary>
 
 </details>
+</details>
 
 <details>
 <summary>
