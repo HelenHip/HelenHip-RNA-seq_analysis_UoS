@@ -617,15 +617,18 @@ We have successfully carried out quality control of our reads. With our good qua
 
 <details>
 <summary>
+
 #### 5.1) Reference sequence preparation
 
 </summary>
 
+Text here
 
 </details>
 
 <details>
 <summary>
+
 #### 5.2) Read mapping
 
 </summary>
