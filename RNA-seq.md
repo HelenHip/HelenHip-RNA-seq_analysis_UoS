@@ -369,6 +369,58 @@ Fastq files contain a header line, the nucleotide sequence, and its correspondin
 
 </summary>
 
+We’ll run the raw sequence data through FastQC to summarise the data quality.
+
+First make a directory for the output.
+
+```{bash eval=FALSE}
+mkdir raw_fastqc_output
+```
+
+Now we can run __fastqc__.
+We'll submit this as a job using ```sbatch```. First let's have a look at the job submission script.
+
+```{bash eval=FALSE}
+less scripts/raw_fastqc.sh
+```
+
+The lines at the top of the file contain the information on the amount of cores, memory and time we are requesting to use.
+The fastqc command itself is underneath these lines.
+
+
+
+```{bash eval=FALSE}
+fastqc -o raw_fastqc_output \
+17_slice_R1.fq.gz 17_slice_R2.fq.gz
+```
+
+__Note__: 
+
+- This command can be run over one line excluding the `\`
+- Alternatively, you can type `\` during a command and then press the enter key. The next line on the command line will start with `>`. This can be used to type one command over multiple lines and can be easier to read.
+
+Submit the script to run:
+```{bash eval=FALSE}
+sbatch scripts/raw_fastqc.sh
+```
+
+
+Using firefox have a look at the output html reports and answer the following questions.
+
+To look at the R1 fastqc output:
+
+```{bash eval=FALSE}
+firefox raw_fastqc_output/17_slice_R1_fastqc.html &
+```
+
+You may see a warning message on your terminal, but you can press enter to continue to type in the terminal.
+
+To look at R2 fastqc output:
+```{bash eval=FALSE}
+firefox raw_fastqc_output/17_slice_R2_fastqc.html &
+```
+
+
 </details>
 
 <details>
