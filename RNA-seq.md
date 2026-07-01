@@ -405,20 +405,18 @@ sbatch scripts/raw_fastqc.sh
 ```
 
 
-Using firefox have a look at the output html reports and answer the following questions.
+Download and have a look at the output html reports and answer the following questions.
 
-To look at the R1 fastqc output:
+1. How many total reads are there in the R1 file?
+   - A) 44
+   - B) 101
+   - C) 539,580
 
-```{bash eval=FALSE}
-firefox raw_fastqc_output/17_slice_R1_fastqc.html &
-```
-
-You may see a warning message on your terminal, but you can press enter to continue to type in the terminal.
-
-To look at R2 fastqc output:
-```{bash eval=FALSE}
-firefox raw_fastqc_output/17_slice_R2_fastqc.html &
-```
+<details>
+<summary><strong>Click here to reveal the answer</strong></summary>
+<br>
+Correct Answer: <strong>C) 539,580</strong>
+</details>
 
 
 </details>
