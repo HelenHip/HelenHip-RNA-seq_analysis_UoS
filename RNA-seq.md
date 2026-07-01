@@ -491,7 +491,7 @@ less scripts/trimmomatic.sh
 ```
 
 <p align="left">
-  <img src="Images/trim_script.png" alt="Trimmomatic script" width="300" />
+  <img src="Images/trim_script.png" alt="Trimmomatic script" width="500" />
 </p>
 
 The parameter meanings are:
