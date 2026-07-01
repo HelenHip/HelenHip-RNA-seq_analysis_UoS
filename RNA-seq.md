@@ -9,12 +9,14 @@
 ## RNA-seq pipeline workshop for Stanage
 <br>
 <font size="4">
-<details><summary><font size="6"><b>1) Credits</b></font></summary>
+<details>
+<summary>
+### 1) Credits
+</summary>
   <br>
   <br>
   Compiled by: Helen Hipperson, University of Sheffield<br>
   <br>
-  
   This pipeline is set up to perform the analysis of RNAseq data in the context of examining differential 
   expression, using standard tools, as introduced in the NEOF RNAseq, Differential Gene Expression and 
   Pathway Analysis workshop. Details of the workshop can be found [here](https://neof.org.uk/training/). 
@@ -22,13 +24,14 @@
   This pipeline closely follows the approach and workflow developed for the above workshop by Katy Maher, Helen 
   Hipperson, Ewan Harney, Steve Paterson, Bert Overduin, Matthew Gemmell and Xuan Liu. It also relies substantially 
   on scripts developed by Katy Maher. Use and referencing of this repository implicitly acknowledges these contributions.
-  </details>
-<br>
-<details><summary><font size="6"><b>2) About</b></font></summary>
+</details>
+<summary>
+### 2) About
+</summary>
   <br>
   <br>
   
- The pipeline relies on you having short-read Illumina transcriptomic data for your samples, and access to a 
+  The pipeline relies on you having short-read Illumina transcriptomic data for your samples, and access to a 
   published or publically-available reference genome or transcriptome with (preferably) a high level of annotation.
 
   This protocol has been written for use with the University of Sheffield's
@@ -54,12 +57,12 @@
   '/home/user/a_file_path'
   <br><br>
  Contact: Helen Hipperson //  h.hipperson@sheffield.ac.uk
-  </details>
-<br>
-<details><summary><font size="6"><b>3) Getting started on the HPC.</b></font></summary>
+</details>
+<summary>
+### 3) Getting started on the HPC
+</summary>
   <br>
-  <br>
-  <font size="4"><b>3.1) Access the HPC</b></font>
+  #### 3.1) Access the HPC
   <br>
 	
   To access the Stanage HPC you must be connected securely to the university network - this can 
@@ -72,7 +75,7 @@
   PowerShell) or a software package such as [MobaXterm](https://mobaxterm.mobatek.net/).
 
   <br>
-  <font size="4"><b>3.2) Access a worker node on Stanage</b></font>
+  #### 3.2) Access a worker node on Stanage
   <br>
   
   Once you have successfully logged into Stanage, you need to access a worker node:
@@ -93,7 +96,7 @@
 
   
   <br>
-  <font size="4"><b>3.3) Load the Genomics Software Repository</b></font>
+  #### 3.3) Load the Genomics Software Repository
   <br>
   
   The Genomics Software Repository contains several pre-loaded pieces of software
@@ -129,7 +132,7 @@ $HOME/.bash_profile
 
   
   <br>
-  <font size="4"><b>3.4) Set up your conda profile</b></font>
+  #### 3.4) Set up your conda profile
   <br>
   
   If you have never run conda before on Stanage, you might have to initialise your conda. To do this type:
@@ -142,7 +145,7 @@ $HOME/.bash_profile
   <br>
   
   <br>
-  <font size="4"><b>3.5) Running scripts on the HPC cluster</b></font>
+  #### 3.5) Running scripts on the HPC cluster
   <br>
   
   To add our job to the job scheduler, we would submit the shell scripts using 'sbatch'
@@ -171,7 +174,7 @@ $HOME/.bash_profile
 
 
   <br>
-  <font size="4"><b>3.6) Passing command line arguments to a script</b></font>
+  #### 3.6) Passing command line arguments to a script
   <br>
 
   As well as running the standardised scripts there are some parameters which will be unique to your project or data. 
