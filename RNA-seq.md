@@ -309,7 +309,8 @@ cd /mnt/parscratch/users/$USER
 
 ```{bash eval=FALSE}
 # Make a directory called rnaseq
-mkdir rnaseq```
+mkdir rnaseq
+```
 
 Then copy the directory with the example data into your 'home' directory.
 
