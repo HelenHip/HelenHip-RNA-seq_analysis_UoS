@@ -330,7 +330,6 @@ This tutorial will give hands on experience with quality control of transcriptom
 
 </details>
 
-</details>
 
 
 <details>
