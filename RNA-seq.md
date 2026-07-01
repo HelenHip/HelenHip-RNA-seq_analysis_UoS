@@ -303,14 +303,18 @@ $HOME/.bash_profile
 To do this type the following commands.
 
 ```{bash eval=FALSE}
-#Make sure you are in your parscratch user directory
+# Make sure you are in your parscratch user directory
 cd /mnt/parscratch/users/$USER
 ```
+
+```{bash eval=FALSE}
+# Make a directory called rnaseq
+mkdir rnaseq```
 
 Then copy the directory with the example data into your 'home' directory.
 
 ```{bash eval=FALSE}
-cp -r /mnt/parscratch/users/bo1hxh/public/rnaseq/Practical_one .
+cp -r /mnt/parscratch/users/bo1hxh/public/rnaseq/Practical_one ./rnaseq
 ```
 
 
