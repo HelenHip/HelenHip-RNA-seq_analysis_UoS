@@ -235,9 +235,80 @@ $HOME/.bash_profile
   For example, you might supply your genome file name to a script using the '-g' flag as
 
   ```
-  a_demo_script.sh -g my_orgamism.fa
+  a_demo_script.sh -g my_organism.fa
   ```
   </details>
+  
+  <details>
+  <summary>
+  
+#### 3.7) Accessing the example data
+
+   </summary>
+   
+   
+   <details>
+  <summary>
+  
+##### 3.7.1) Set up
+
+   </summary>
+   
+  You should work in the directory '/mnt/parscratch/users/' on Stanage as this allows adequate space for your data and
+  output (opposed to your home directory) and it also allows shared access to your files, scripts, and output and error
+  logs, all of which are useful for troubleshooting.
+
+  Check if you already have a directory in '/mnt/parscratch/users/' by running the command exactly as it appears below.
+
+  ```
+  ls /mnt/parscratch/users/$USER
+  ```
+
+  If you receive the message
+  ```
+  ls: cannot access /mnt/parscratch/users/<user>: No such file or directory
+  ```
+  you'll need to create a new folder in '/mnt/parscratch/users/' using the command exactly as it appears below:
+
+  ```
+  mkdir -m 0755 /mnt/parscratch/users/$USER
+  ```
+
+  Great! Now you have your own folder to work in on the hpc.
+</details>
+
+   <details>
+  <summary>
+  
+##### 3.7.2) Getting the data
+
+   </summary>
+   
+   
+   Before we can start we first need to make a directory which will be used to contain all the files you generate throughout this workshop.
+
+To do this type the following commands.
+
+```{bash eval=FALSE}
+#Make sure you are in your parscratch user directory
+cd /mnt/parscratch/users/$USER
+```
+
+Then copy the directory with the example data into your 'home' directory.
+
+```{bash eval=FALSE}
+cp -r /mnt/parscratch/users/bo1hxh/public/rnaseq .
+```
+
+
+You will need to activate the rnaseq conda environment before continuing. Carry this out with the following command.
+
+```{bash eval=FALSE}
+conda activate rnaseq
+```
+
+You're now ready to start the analyses!
+  
   </details>
   
 ## Generating gene counts
@@ -246,6 +317,57 @@ $HOME/.bash_profile
 <summary>
 
 ### 4) Quality Control
+
+</summary>
+
+This tutorial will give hands on experience with quality control of transcriptomic Illumina data. We will first look at the quality of the data.
+
+</details>
+
+<details>
+<summary>
+
+#### 4.1) Workshop data
+
+</summary>
+
+Before we can carry on with the workshop we need to change into the directory containing the raw data for two _Drosophila_ samples. 
+
+<center>
+![](figures/Dros_2.png){style="width:200px; border-radius:15px"}
+</center>
+```{bash eval=FALSE}
+cd /mnt/parscratch/users/$USER/rnaseq/Practical_one
+```
+
+List the contents of the current directory to confirm the four fastq files are there (the files ending in `.fq.gz`).
+```{bash eval=FALSE}
+ls
+```
+
+Have a look at the structure of the input fastq file:
+```{bash eval=FALSE}
+zcat 17_slice_R1.fq.gz | head 
+```
+
+These fastq files are compressed (with the .gz file extension). `zcat` is a command for viewing the contents of compressed files, the pipe `|` symbol then passes this to `head` to display only the first few lines of the file.
+
+Fastq files contain a header line, the nucleotide sequence, and its corresponding quality scores.
+</details>
+
+<details>
+<summary>
+
+#### 4.2) Quality assessment
+
+</summary>
+
+</details>
+
+<details>
+<summary>
+
+#### 4.3) Quality control
 
 </summary>
 
