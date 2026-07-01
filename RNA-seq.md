@@ -299,6 +299,9 @@ $HOME/.bash_profile
 
 </details>
 
+<details>
+<summary>
+
 ### 10) Visualising the results
 
 </summary>
