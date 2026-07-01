@@ -491,7 +491,7 @@ less scripts/trimmomatic.sh
 ```
 
 <p align="left">
-  <img src="Images/trim_script.png" alt="Trimmomatic script" width="500" />
+  <img src="Images/trim_script.png" alt="Trimmomatic script" width="550" />
 </p>
 
 The parameter meanings are:
@@ -512,8 +512,20 @@ Submit the script to run:
 sbatch scripts/trimmomatic.sh
 ```
 
-The 
+ The job also produces 2 log files named using the format 'job name_e_job number' and 'job name_o_job number'. Typically the 'o' file contains any information generated whilst running the job, and the 'e' file any error messages, although this does vary between software.
+ 
+ In the case of Trimmomatic the useful job output is generated in the 'e' log file. 
+ Based on this, approximately what percentage of paired reads were kept? 
+   - A) ~25%
+   - B) ~50%
+   - C) ~75%
 
+<details>
+<summary><strong>Click to reveal answer</strong></summary>
+<br>
+Correct Answer: <strong>~75%</strong>
+</details>
+ 
 </details>
 </details>
 
