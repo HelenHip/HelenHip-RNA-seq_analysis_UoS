@@ -311,6 +311,7 @@ You're now ready to start the analyses!
   
   </details>
   
+  </details>
 
   </details>
 
@@ -328,6 +329,9 @@ You're now ready to start the analyses!
 This tutorial will give hands on experience with quality control of transcriptomic Illumina data. We will first look at the quality of the data.
 
 </details>
+
+</details>
+
 
 <details>
 <summary>
