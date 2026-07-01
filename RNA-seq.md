@@ -547,9 +547,9 @@ When the job has finished running download the html output files as before.
 To see how well the reads have improved let’s answer the below questions and compare to them to the answers of the raw read fastqc questions.
 
 1. How many total reads are there in the R1 file? 
-   A) 44
-   B) 50-101
-   C) 409,267
+   - A) 44
+   - B) 50-101
+   - C) 409,267
 
 <details>
 <summary><strong>Click to reveal answer</strong></summary>
@@ -558,9 +558,9 @@ Correct Answer: <strong>C) 409,267</strong>
 </details>
 
 2. What is the length of the reads? 
-   A) 44
-   B) 50-101
-   C) 539,580
+   - A) 44
+   - B) 50-101
+   - C) 539,580
 
 <details>
 <summary><strong>Click to reveal answer</strong></summary>
@@ -569,9 +569,9 @@ Correct Answer: <strong>B) 50-101</strong>
 </details>
 
 3. What is the GC content (%) of the R2 reads? 
-   A) 44
-   B) 50-101
-   C) 539,580
+   - A) 44
+   - B) 50-101
+   - C) 539,580
 
 <details>
 <summary><strong>Click to reveal answer</strong></summary>
@@ -580,9 +580,9 @@ Correct Answer: <strong>A) 44</strong>
 </details>
 
 4. In the read 2 (R2) file, at what base position range does the quality of the reads go below 28 (I.e. the position where a part of the boxplot, including outliers, goes into the orange)? 
-   A) 18-19
-   B) 84-85
-   C) They don't
+   - A) 18-19
+   - B) 84-85
+   - C) They don't
 
 <details>
 <summary><strong>Click to reveal answer</strong></summary>
@@ -611,11 +611,49 @@ We have successfully carried out quality control of our reads. With our good qua
 ### 5) Aligning Illumina transcriptome data to a reference genome
 
 </summary>
+[HISAT2](http://daehwankimlab.github.io/hisat2/manual/) is a fast and memory efficient alignment program for mapping next-generation sequencing reads (whole-genome, transcriptome, and exome sequencing data) against a reference genome. It is also a splice-aware aligner. Splice-aware aligners map reads over exon/intro junctions and are appropriate for aligning reads to a genome reference. Splice-unaware aligners are not aware of exon/intron junctions and are therefore only appropriate for mapping RNA-sequencing data to a transcriptome.
+
 
 </details>
 
 <details>
 <summary>
+#### 5.1) Reference sequence preparation
+
+</summary>
+
+
+</details>
+
+<details>
+<summary>
+#### 5.2) Read mapping
+
+</summary>
+
+
+</details>
+
+<details>
+<summary>
+#### 5.3) Assess mapping quality
+
+</summary>
+
+
+</details>
+
+<details>
+<summary>
+#### 5.4) Visualising the mapping
+
+</summary>
+
+
+</details>
+
+</details>
+</details>
 
 ### 6) Counting Reads using HTSeq-Count
 
