@@ -338,9 +338,11 @@ This tutorial will give hands on experience with quality control of transcriptom
 
 Before we can carry on with the workshop we need to change into the directory containing the raw data for two _Drosophila_ samples. 
 
-<center>
-![](figures/Dros_2.png){style="width:200px; border-radius:15px"}
-</center>
+
+<img src="Images/Dros_2_.png"
+     alt="Sheffield University Icon"
+     style="centre; margin-right: 10px;" />
+     
 ```{bash eval=FALSE}
 cd /mnt/parscratch/users/$USER/rnaseq/Practical_one
 ```
