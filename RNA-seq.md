@@ -9,6 +9,7 @@
 ## RNA-seq pipeline workshop for Stanage
 <br>
 <font size="4">
+
 <details>
 <summary>
 
@@ -26,6 +27,10 @@
   This pipeline closely follows the approach and workflow developed for the above workshop by Katy Maher, Helen 
   Hipperson, Ewan Harney, Steve Paterson, Bert Overduin, Matthew Gemmell and Xuan Liu. It also relies substantially 
   on scripts developed by Katy Maher. Use and referencing of this repository implicitly acknowledges these contributions.
+</details>
+
+<br>
+
 <details>
 <summary>
 
