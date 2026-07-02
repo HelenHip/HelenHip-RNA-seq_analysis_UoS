@@ -650,6 +650,3 @@ We have successfully carried out quality control of our reads. With our good qua
  
 </details>
 </details>
-
-<details>
-<summary>
