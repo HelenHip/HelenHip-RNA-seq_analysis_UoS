@@ -183,8 +183,7 @@ We will carry out a differential gene expression analysis of a subset of [_Droso
   If not, enter the following:
   
   ```
-  echo -e "if [[ -e '/mnt/community/Genomics' ]];\nthen\n\tsource /mnt/community/Genomics/.bashrc\nfi" >>
-$HOME/.bash_profile
+  echo -e "if [[ -e '/mnt/community/Genomics' ]];\nthen\n\tsource /mnt/community/Genomics/.bashrc\nfi" >> $HOME/.bash_profile
   ```
   Then re-load your profile:
   
