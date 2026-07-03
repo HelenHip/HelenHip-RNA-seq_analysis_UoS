@@ -903,8 +903,8 @@ sbatch scripts2/htseq_gene.sh
 You can view this script using ```less```. 
 
 
-<p align="center">
-  <img src="Images/htseq_script.png" alt="htseq_script" width="200" />
+<p align="left">
+  <img src="Images/htseq_script.png" alt="htseq_script" width="450" />
 </p>
 
 
