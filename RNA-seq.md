@@ -692,7 +692,7 @@ You're now ready to start the analyses!
 </summary>
 
 <p align="center">
-  <img src="Images/index.png" alt="index" width="200" />
+  <img src="Images/index.png" alt="index" width="350" />
 </p>
 
 `HISAT2` uses indexing of the reference genome to speed up the mapping. The index needs to be prepared before we map our reads. 
@@ -719,7 +719,7 @@ When the job has run use ```ls -lht``` to list the files in the directory. The o
 </summary>
 
 <p align="center">
-  <img src="Images/map.png" alt="map" width="200" />
+  <img src="Images/map.png" alt="map" width="300" />
 </p>
 
 Now  we are ready to map our reads. First make a directory for our output.
@@ -735,7 +735,7 @@ less scripts2/map.sh
 ```
 
 <p align="left">
-  <img src="Images/map_script.png" alt="Mapping script" width="550" />
+  <img src="Images/map_script.png" alt="Mapping script" width="450" />
 </p>
 
 The options used are:
@@ -774,13 +774,13 @@ samtools view aligned/17_slice.sorted.bam | head
 Here is an example of one line, representing information from one sequence read.
 
 <p align="center">
-  <img src="Images/sam1.png" alt="sam file" width="200" />
+  <img src="Images/sam1.png" alt="sam file" width="600" />
 </p>
 
 Each column contains information on where and how well the read aligns to the reference. After column 11 there can be several optional tags, often specific to the aligner used and can be useful for downstream analysis.
 
 <p align="center">
-  <img src="Images/sam2.png" alt="sam key" width="200" />
+  <img src="Images/sam2.png" alt="sam key" width="600" />
 </p>
 
 The image above is from a different alignment file to the one you have generated here. On the first line of your alignment file what is the query sequence name? What is the reference contig name?
