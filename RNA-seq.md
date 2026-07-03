@@ -774,7 +774,7 @@ samtools view aligned/17_slice.sorted.bam | head
 Here is an example of one line, representing information from one sequence read.
 
 <p align="center">
-  <img src="Images/sam1.png" alt="sam file" width="600" />
+  <img src="Images/sam1.png" alt="sam file" width="1000" />
 </p>
 
 Each column contains information on where and how well the read aligns to the reference. After column 11 there can be several optional tags, often specific to the aligner used and can be useful for downstream analysis.
