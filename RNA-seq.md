@@ -754,6 +754,11 @@ The options used are:
 
 There are many different mapping parameters you can specify, see [here](http://daehwankimlab.github.io/hisat2/manual/). While it is often sufficient to run HISAT2 with default settings, we recommend reading the manual and considering your own dataset carefully when running any analysis.
 
+To run this script:
+```{bash eval=FALSE}
+sbatch scripts2/map.sh
+```
+
 HISAT2 outputs a SAM file [(Sequence Alignment Map format)](https://samtools.github.io/hts-specs/SAMv1.pdf). However, here we pipe the output to [`samtools`](http://www.htslib.org/), a program for writing, viewing and manipulating alignment files, to sort and generate a BAM format, a binary, compressed version of SAM format. This sorts the SAM file by position (this is the default) and outputs it as a BAM file to save space.
 
 We can view this file using `samtools view`, and `head` to display only the first few lines:
