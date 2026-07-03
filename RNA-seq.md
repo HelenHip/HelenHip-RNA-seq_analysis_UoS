@@ -869,15 +869,6 @@ Correct Answer: <strong>D) 100%</strong>
 
 </details>
 
-<details>
-<summary>
-
-#### 5.4) Visualising the mapping
-
-</summary>
-
-
-</details>
 
 </details>
 </details>
@@ -890,7 +881,7 @@ Correct Answer: <strong>D) 100%</strong>
 </summary>
 
 <p align="center">
-  <img src="Images/index.png" alt="index" width="200" />
+  <img src="Images/count.png" alt="count" width="300" />
 </p>
 
 The next step is counting the number of reads per gene and exon. For this we will use [htseq-count](https://htseq.readthedocs.io/en/release_0.11.1/count.html).
